@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mycarei_top"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/mycarti_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/topBar2_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:button="@drawable/checkbox1"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/main_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/price_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <!-- 商品总价提示 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/shopTotalPrice" />
+            <!-- 选中商品的总金额 -->
+
+            <TextView
+                android:id="@+id/shopTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:drawableTop="@drawable/recycle"
+                android:text="@string/delete" />
+
+            <TextView
+                android:id="@+id/collection"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/delete"
+                android:drawableTop="@drawable/collection"
+                android:text="@string/collection" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/checkOut"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/yanzheng_bg1"
+                android:gravity="center"
+                android:text="@string/checkOut" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

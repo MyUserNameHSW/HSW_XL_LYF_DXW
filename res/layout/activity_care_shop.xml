@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CareShopActivity" >
+
+    <ImageView
+        android:id="@+id/care_shop_top_img"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/care_shops_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/detail_back" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        style="@style/mw"
+        android:layout_below="@id/care_shop_top_img"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/care_shop_name"
+            style="@style/ww"
+            android:textSize="24sp"
+            android:text="name" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/care_shop_address"
+            style="@style/ww"
+            android:textSize="18sp"
+            android:text="care_shop_address" />
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/ww"
+                android:textSize="18sp"
+                android:text="联系花店" />
+
+            <ImageView
+                android:id="@+id/call_phone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/call_phone" />
+
+            <ImageView
+                style="@style/ww"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/u37_line" />
+
+            <ImageView
+                android:id="@+id/call_message"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/call_message" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/gray" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/care_shop_script"
+            style="@style/ww"
+            android:text="script"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/care_to_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/themeColor"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="去TA的店铺看看"
+        android:textColor="@color/white" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

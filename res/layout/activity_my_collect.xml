@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/collect_top"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/collect_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/topBar2_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="我的收藏"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="宝贝"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="店铺"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="文章"
+            android:textColor="#000000"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/below_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

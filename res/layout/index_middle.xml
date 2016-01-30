@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.circleimageview.ReboundScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mm"
+        android:orientation="vertical" >
+
+        <!-- 轮播框 -->
+
+        <com.example.slideshowdemo.customview.SlideShowView
+            android:id="@+id/slideshowView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true" />
+        <!-- 四个分类图标 -->
+
+        <LinearLayout
+            style="@style/mw"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" >
+
+            <ImageView
+                android:id="@+id/Imiddle_img1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sort_main3" />
+
+            <ImageView
+                android:id="@+id/Imiddle_img2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sort_main2" />
+
+            <ImageView
+                android:id="@+id/Imiddle_img3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sort_main4" />
+
+            <ImageView
+                android:id="@+id/Imiddle_img4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sort_main1" />
+        </LinearLayout>
+        <!-- 首页推荐列表 -->
+        <!-- 种类标题 1 -->
+
+        <RelativeLayout
+            style="@style/mw"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <View 
+                android:id="@+id/kuai1"
+                android:layout_width="8dp"
+                android:layout_height="30dp"
+                android:background="@color/themeColor"
+                />
+            <TextView
+                android:textColor="@color/themeColor"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kuai1"
+                android:id="@+id/Imiddle_type1_tv"
+                style="@style/ww"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                
+                android:text="观赏植物" />
+            <!-- 种类详细。（更多，可点击） -->
+
+
+            <!--
+                 <ImageView
+                android:id="@+id/Imiddle_more1"
+                style="@style/ww"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_songlist_detail_nor" />
+            -->
+        </RelativeLayout>
+        <!-- 推荐图片（上1大下2小） -->
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/watch_big"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/watch_small1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/watch_small2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <!-- 种类标题 2 -->
+
+        <RelativeLayout
+            style="@style/mw"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <View 
+                android:id="@+id/kuai2"
+                android:layout_width="8dp"
+                android:layout_height="30dp"
+                android:background="#CD5C5C"
+                />
+            <TextView
+                android:textColor="#CD5C5C"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kuai2"
+                android:id="@+id/Imiddle_type2_tv"
+                style="@style/ww"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:text="多肉植物" />
+            <!-- 种类详细。（更多，可点击） -->
+
+
+            <!--
+                 <ImageView
+                android:id="@+id/Imiddle_more2"
+                style="@style/ww"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_songlist_detail_nor" />
+            -->
+        </RelativeLayout>
+        <!-- 推荐图片（上1大下2小） -->
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/duorou_big"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/duorou_small1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/duorou_small2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <!-- 种类标题 3 -->
+
+        <RelativeLayout
+            style="@style/mw"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <View 
+                android:id="@+id/kuai3"
+                android:layout_width="8dp"
+                android:layout_height="30dp"
+                android:background="#ADFF2F"
+                />
+            <TextView
+                android:textColor="#ADFF2F"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kuai3"
+                android:id="@+id/Imiddle_type3_tv"
+                style="@style/ww"
+                android:layout_gravity="left"
+                android:textSize="20sp"
+                android:text="小盆栽" />
+            <!-- 种类详细。（更多，可点击） -->
+
+
+            <!--
+                 <ImageView
+                android:id="@+id/Imiddle_more3"
+                style="@style/ww"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_songlist_detail_nor" />
+            -->
+        </RelativeLayout>
+        <!-- 推荐图片（上1大下2小） -->
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/smallp_big"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/smallp_small1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/smallp_small2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <!-- 种类标题 4 -->
+
+        <RelativeLayout
+            style="@style/mw"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+            <View 
+                android:id="@+id/kuai4"
+                android:layout_width="8dp"
+                android:layout_height="30dp"
+                android:background="#33cc99"
+                />
+            <TextView
+                android:textColor="#33cc99"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kuai4"
+                android:id="@+id/Imiddle_type4_tv"
+                style="@style/ww"
+                android:textSize="20sp"
+                android:text="种植工具" />
+            <!-- 种类详细。（更多，可点击） -->
+
+
+            <!--
+                 <ImageView
+                android:id="@+id/Imiddle_more4"
+                style="@style/ww"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_songlist_detail_nor" />
+            -->
+        </RelativeLayout>
+        <!-- 推荐图片（上1大下2小） -->
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/tools_big"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/tools_small1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/tools_small2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.example.circleimageview.ReboundScrollView>

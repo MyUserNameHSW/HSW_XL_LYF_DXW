@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <RelativeLayout
+        android:id="@+id/rel1search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/bk_button"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="#66aa11"
+            android:layout_marginTop="5dp"          
+            android:text="搜索"
+            android:textColor="#fff" />
+
+        <RelativeLayout
+            android:id="@+id/rel2search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/bk_button" 
+            android:layout_gravity="center" >
+
+            <EditText
+                android:id="@+id/bk_searchText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/know_search"
+                android:hint="请输入你要搜索的内容"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

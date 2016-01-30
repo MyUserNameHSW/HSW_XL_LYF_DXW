@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFocusActivity" >
+
+    <RelativeLayout
+        android:id="@+id/myfocus_top"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/myfocus_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/topBar2_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="我的关注"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/myfocus_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myfocus_top" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetCodeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/fcode_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/fcode_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="忘记密码"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+   <RelativeLayout
+        style="@style/mw"
+        android:layout_below="@id/r1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp" >
+     <EditText
+            android:id="@+id/fcode_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/edit_middle_backgroung"
+            android:drawableLeft="@drawable/lyy_user_phone"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/yanzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/yanzheng_bg"
+            android:text="获取验证码" />
+
+        <EditText
+            android:id="@+id/fcode_yanzheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fcode_phone"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/edit_bottom_backgroung"
+            android:drawableLeft="@drawable/lyy_msg_get"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/fcode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fcode_yanzheng"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_login_bg"
+            android:text="下一步"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

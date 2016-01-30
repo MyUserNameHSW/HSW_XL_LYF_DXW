@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/mycare_img"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/care_shop" />
+
+    <LinearLayout
+        style="@style/mw"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mycare_tv1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#F08080"
+            android:gravity="center"
+            android:text="去提交"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/mycare_tv2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#33cc99"
+            android:gravity="center"
+            android:text="已提交"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/mycare_tv3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#9ACD32"
+            android:gravity="center"
+            android:text="已代养"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="代养说明"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/care_other1"
+        android:textColor="#B0B0B0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/care_other2"
+        android:textColor="#B0B0B0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/care_other3"
+        android:textColor="#B0B0B0"
+        android:textSize="16sp" />
+
+</LinearLayout>

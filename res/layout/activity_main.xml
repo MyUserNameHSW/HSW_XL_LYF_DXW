@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm" >
+
+    <FrameLayout
+        android:id="@+id/topBar"
+        style="@style/mw" >
+    </FrameLayout>
+
+    <include
+        
+        android:id="@+id/include_bottom_guide"
+        layout="@layout/bottom" />
+
+    <FrameLayout
+        android:id="@+id/middle_view"
+        style="@style/mm"
+        android:layout_above="@id/include_bottom_guide"
+        android:layout_below="@id/topBar" >
+    </FrameLayout>
+
+</RelativeLayout>

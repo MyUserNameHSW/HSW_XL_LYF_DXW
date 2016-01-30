@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mw"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        style="@style/mw"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/userimageitem"
+                android:scaleType="fitXY"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <LinearLayout
+                style="@style/ww"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/usernameitem"
+                    style="@style/ww"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/timeitem"
+                    style="@style/ww" 
+                    android:textSize="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            style="@style/mw"
+            android:singleLine="false"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" 
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

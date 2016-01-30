@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaringActivity" >
+
+    <RelativeLayout
+        android:id="@+id/caring_top"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/caring_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/caring_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="我的代养"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caring_top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="代养的植物：" />
+
+            <TextView
+                android:id="@+id/caring_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="领取时间：" />
+
+            <TextView
+                android:id="@+id/caring_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/mw"
+            android:orientation="horizontal" 
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                style="@style/ww"
+                android:text="联系TA" />
+
+            <ImageView
+                android:id="@+id/caring_call_phone"
+                style="@style/ww"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/call_phone" />
+
+            <ImageView
+                style="@style/ww"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/u37_line" />
+
+            <ImageView
+                android:id="@+id/caring_call_message"
+                style="@style/ww"
+                android:src="@drawable/call_message" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

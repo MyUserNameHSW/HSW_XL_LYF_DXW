@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lyy.project"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.lyy.util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/lyy_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lyy.activities.MainActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lyy.activities.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.Type1_1Activity"
+            android:label="@string/title_activity_type_1" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.ProductActivity"
+            android:label="@string/title_activity_product" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.GoodsActivity"
+            android:label="@string/title_activity_goods" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.FormsActivity"
+            android:label="@string/title_activity_forms" >
+        </activity>
+        <activity android:name="com.lyy.activities.MyCartActivity" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.MyCareActivity"
+            android:label="@string/title_activity_my_care"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.MyFocusActivity"
+            android:label="@string/title_activity_my_focus" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.MyCollectActivity"
+            android:label="@string/title_activity_my_collect" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.SetActivity"
+            android:label="@string/title_activity_set" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.ForgetCodeActivity"
+            android:label="@string/title_activity_forget_code" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.UpdateCodeActivity"
+            android:label="@string/title_activity_update_code" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.UserInfoActivity"
+            android:label="@string/title_activity_user_info"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.UpdatePhoneActivity"
+            android:label="@string/title_activity_update_phone" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.UpdateNameActivity"
+            android:label="@string/title_activity_update_name" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.PSearchActivity"
+            android:label="@string/title_activity_psearch" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.FriendsActivity"
+            android:label="@string/title_activity_friends" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.CareShareActivity"
+            android:label="@string/title_activity_care_share" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.YouCareListActivity"
+            android:label="@string/title_activity_you_care_list" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.YouCareList2Activity"
+            android:label="@string/title_activity_you_care_list2" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.CareShopActivity"
+            android:label="@string/title_activity_care_shop" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.PersonCareActivity"
+            android:label="@string/title_activity_person_care" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.EditPProvideActivity"
+            android:label="@string/title_activity_edit_pprovide" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.CareTypeActivity"
+            android:label="@string/title_activity_care_type" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.MySubmitActivity"
+            android:label="@string/title_activity_my_submit" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.SMActivity"
+            android:label="@string/title_activity_sm" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.PMycareActivity"
+            android:label="@string/title_activity_pmycare" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.ShareCareActivity"
+            android:label="@string/title_activity_share_care" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.AddShareActivity"
+            android:label="@string/title_activity_add_share" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.CareAssessActivity"
+            android:label="@string/title_activity_care_assess" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.CaringActivity"
+            android:label="@string/title_activity_caring" >
+        </activity>
+        <activity android:name="com.lyy.know.activities.KnowActivity" >
+        </activity>
+        <activity android:name="com.lyy.know.activities.KnowProblemActivity" >
+        </activity>
+        <activity android:name="com.lyy.know.activities.KnowProblemDetailActivity" >
+        </activity>
+        <activity android:name="com.lyy.know.activities.KnowRenZhiActivity" >
+        </activity>
+        <activity android:name="com.lyy.know.activities.KnowRenZhiDetailActivity" >
+        </activity>
+        <activity android:name="com.lyy.know.activities.KnowRenZhiProblemContentActivity" >
+        </activity>
+        <activity android:name="com.lyy.know.activities.KnowSearchActivity" >
+        </activity>
+        <activity
+            android:name="com.lyy.forums.activities.ForumDetailActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity android:name="com.lyy.forums.activities.Forum_MessageActivity" >
+        </activity>
+        <activity android:name="com.lyy.forums.activities.ShareActivity" >
+        </activity>
+        <activity
+            android:name="com.lyy.detailpage.StoreActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity android:name="com.lyy.xl.activities.BuyActivity" >
+        </activity>
+        <activity android:name="com.lyy.xl.activities.CartActivity" >
+        </activity>
+        <activity android:name="com.lyy.xl.activities.DetailActivity" 
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.lyy.xl.activities.MessageAddressActivity" >
+        </activity>
+        <activity android:name="com.lyy.xl.activities.OrderDetailActivity" >
+        </activity>
+        <activity android:name="com.lyy.xl.activities.ShouhuoAddressActivity" >
+        </activity>
+        <activity android:name="com.lyy.xl.activities.StoreActivity" >
+        </activity>
+        <activity android:name="com.lyy.xl.activities.StorejianjieActivity" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lyy.xl.activities.PayActivity"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.PayMoneyActivity"
+            android:label="@string/title_activity_pay_money" >
+        </activity>
+        <activity
+            android:name="com.lyy.activities.CartPayActivity"
+            android:label="@string/title_activity_cart_pay" >
+        </activity>
+    </application>
+
+</manifest>

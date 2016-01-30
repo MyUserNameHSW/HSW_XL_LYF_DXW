@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PSearchActivity" >
+
+    <RelativeLayout
+        android:id="@+id/pr1"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/psearch_back"
+            style="@style/topbarsize"
+            android:onClick="psearch_back"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/psearch_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Psearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pr1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp" >
+
+        <EditText
+            android:id="@+id/Psearch_et"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/two_radius" />
+
+        <Button
+            android:id="@+id/Psearch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yanzheng_bg1"
+            android:text="查询"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Psearch"
+        android:focusable="false" />
+
+</RelativeLayout>

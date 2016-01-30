@@ -1,0 +1,258 @@
+# view res/layout/activity_forms.xml #generated:71
+# view res/layout/activity_my_collect.xml #generated:73
+# view res/layout/layout_slideshow.xml #generated:6
+# view res/layout/xl_activity_main.xml #generated:83
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_friends.xml #generated:22
+# view res/layout/activity_user_info.xml #generated:22
+# view res/layout/layout_menu.xml #generated:18
+-keep class com.example.circleimageview.CircleImageView { <init>(...); }
+
+# view res/layout/activity_edit_pprovide.xml #generated:35
+# view res/layout/activity_sm.xml #generated:112
+-keep class com.example.circleimageview.EditTextWithDate { <init>(...); }
+
+# view res/layout/listview_item.xml #generated:21
+-keep class com.example.circleimageview.NoScrollGridView { <init>(...); }
+
+# view res/layout/activity_store1.xml #generated:92
+-keep class com.example.circleimageview.NoScrollListView { <init>(...); }
+
+# view res/layout/index_middle.xml #generated:2
+# view res/layout/you_care.xml #generated:2
+-keep class com.example.circleimageview.ReboundScrollView { <init>(...); }
+
+# view res/layout/index_middle.xml #generated:13
+-keep class com.example.slideshowdemo.customview.SlideShowView { <init>(...); }
+
+# view res/layout/slidingmenumain.xml #generated:2
+-keep class com.jeremyfeinstein.slidingmenu.lib.SlidingMenu { <init>(...); }
+
+# view res/layout/index_middle.xml #generated:107
+# view res/layout/index_middle.xml #generated:114
+# view res/layout/index_middle.xml #generated:159
+# view res/layout/index_middle.xml #generated:170
+# view res/layout/index_middle.xml #generated:177
+# view res/layout/index_middle.xml #generated:222
+# view res/layout/index_middle.xml #generated:233
+# view res/layout/index_middle.xml #generated:240
+# view res/layout/index_middle.xml #generated:284
+# view res/layout/index_middle.xml #generated:295
+# view res/layout/index_middle.xml #generated:302
+# view res/layout/index_middle.xml #generated:96
+# view res/layout/type1_1_item.xml #generated:9
+-keep class com.loopj.android.image.SmartImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.lyy.activities.AddShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.lyy.activities.CareAssessActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.lyy.activities.CareShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.lyy.activities.CareShopActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.lyy.activities.CareTypeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.lyy.activities.CaringActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:244
+-keep class com.lyy.activities.CartPayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:142
+-keep class com.lyy.activities.EditPProvideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.lyy.activities.ForgetCodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.lyy.activities.FormsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.lyy.activities.FriendsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.lyy.activities.GoodsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.lyy.activities.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.lyy.activities.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.lyy.activities.MyCareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.lyy.activities.MyCartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.lyy.activities.MyCollectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.lyy.activities.MyFocusActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.lyy.activities.MySubmitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.lyy.activities.PMycareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.lyy.activities.PSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:240
+-keep class com.lyy.activities.PayMoneyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:138
+-keep class com.lyy.activities.PersonCareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.lyy.activities.ProductActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class com.lyy.activities.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:154
+-keep class com.lyy.activities.SMActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.lyy.activities.SetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.lyy.activities.ShareCareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.lyy.activities.Type1_1Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.lyy.activities.UpdateCodeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.lyy.activities.UpdateNameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.lyy.activities.UpdatePhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.lyy.activities.UserInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:130
+-keep class com.lyy.activities.YouCareList2Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:126
+-keep class com.lyy.activities.YouCareListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.lyy.detailpage.StoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.lyy.forums.activities.ForumDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:196
+-keep class com.lyy.forums.activities.Forum_MessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class com.lyy.forums.activities.ShareActivity { <init>(...); }
+
+# view res/layout/forum_middle.xml #generated:7
+-keep class com.lyy.forums.util.ForumListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:178
+-keep class com.lyy.know.activities.KnowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.lyy.know.activities.KnowProblemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:182
+-keep class com.lyy.know.activities.KnowProblemDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.lyy.know.activities.KnowRenZhiActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:186
+-keep class com.lyy.know.activities.KnowRenZhiDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class com.lyy.know.activities.KnowRenZhiProblemContentActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class com.lyy.know.activities.KnowSearchActivity { <init>(...); }
+
+# view res/layout/forum_activity_main.xml #generated:5
+-keep class com.lyy.util.ForumListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.lyy.util.MyApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.lyy.xl.activities.BuyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:206
+-keep class com.lyy.xl.activities.CartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class com.lyy.xl.activities.DetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.lyy.xl.activities.MessageAddressActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:213
+-keep class com.lyy.xl.activities.OrderDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.lyy.xl.activities.PayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.lyy.xl.activities.ShouhuoAddressActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class com.lyy.xl.activities.StoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:219
+-keep class com.lyy.xl.activities.StorejianjieActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:221
+-keep class com.mob.tools.MobUIShell { <init>(...); }
+
+# onClick res/layout/activity_know_problem.xml #generated:12
+# onClick res/layout/activity_know_problem_detail.xml #generated:13
+# onClick res/layout/activity_know_ren_zhi.xml #generated:12
+# onClick res/layout/activity_know_ren_zhi_detail.xml #generated:12
+# onClick res/layout/activity_know_search.xml #generated:12
+-keepclassmembers class * { *** ComeBack(...); }
+
+# onClick res/layout/activity_pay.xml #generated:12
+-keepclassmembers class * { *** backs(...); }
+
+# onClick res/layout/layout_main.xml #generated:12
+-keepclassmembers class * { *** change(...); }
+
+# onClick res/layout/photo_choose_dialog.xml #generated:10
+# onClick res/layout/photo_choose_dialog.xml #generated:26
+# onClick res/layout/photo_choose_dialog.xml #generated:37
+-keepclassmembers class * { *** on_click(...); }
+
+# onClick res/layout/activity_buy_immediately.xml #generated:194
+# onClick res/layout/activity_buy_immediately.xml #generated:216
+# onClick res/layout/popwindow.xml #generated:103
+# onClick res/layout/popwindow.xml #generated:136
+# onClick res/layout/popwindow.xml #generated:158
+# onClick res/layout/popwindow.xml #generated:178
+# onClick res/layout/popwindow.xml #generated:51
+# onClick res/layout/popwindow.xml #generated:89
+-keepclassmembers class * { *** on_gmtc(...); }
+
+# onClick res/layout/activity_care_type.xml #generated:12
+# onClick res/layout/activity_psearch.xml #generated:12
+-keepclassmembers class * { *** psearch_back(...); }
+
+# onClick res/layout/activity_edit_pprovide.xml #generated:148
+-keepclassmembers class * { *** submits(...); }
+

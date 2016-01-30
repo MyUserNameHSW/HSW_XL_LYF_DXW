@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    tools:context=".KnowProblemContentActivity" >
+    
+<TextView
+        android:id="@+id/bk_problem_content_nametextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10sp"
+        android:text="TextView"
+		android:textSize="20sp"
+		android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/bk_problem_content_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@android:drawable/sym_def_app_icon" />
+
+    
+
+    <TextView
+        android:id="@+id/bk_problem_content_articaltextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:typeface="monospace"
+        android:lineSpacingMultiplier="1.5"/>
+
+</LinearLayout>

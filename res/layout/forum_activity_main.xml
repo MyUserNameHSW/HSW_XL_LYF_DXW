@@ -1,0 +1,9 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm">
+
+    <com.lyy.util.ForumListView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/listView" />
+</RelativeLayout>

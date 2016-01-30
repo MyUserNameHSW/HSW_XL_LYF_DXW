@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/anim1"
+        layout="@layout/loading_anim" />
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/type1_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/topBar1_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/sorts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/r1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/saleNum_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="销量最高"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/gray" />
+
+        <Button
+            android:id="@+id/price_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="价格最高"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/type1_1_listview"
+        style="@style/mw"
+        android:layout_below="@id/sorts"
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+</RelativeLayout>

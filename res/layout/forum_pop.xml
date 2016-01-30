@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ww"
+    android:background="#c8bfbf"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/attention"
+        style="@style/ww"
+        android:layout_gravity="center"
+        android:text="关注" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33909090" />
+
+    <TextView
+        android:id="@+id/cancelattention"
+        style="@style/ww"
+        android:text="取消关注" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33909090" />
+
+    <TextView
+        android:id="@+id/report"
+        style="@style/ww"
+        android:layout_gravity="center"
+        android:text="举报" />
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPProvideActivity" >
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/Epp_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/topBar1_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="提交代养"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        style="@style/mw"
+        android:layout_below="@id/r1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <com.example.circleimageview.EditTextWithDate
+            android:id="@+id/limitedDate"
+            style="@style/mw"
+            android:background="@drawable/two_radius"
+            android:hint="请点击右侧日历选择" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="居住地" 
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/cities"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/county"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/epp_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/two_radius"
+            android:hint="街道详细地址" />
+
+        <EditText
+            android:id="@+id/epp_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/two_radius"
+            android:hint="请输入代样类型" />
+
+        <RelativeLayout
+            style="@style/mw"
+            android:layout_below="@id/r1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/epp_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_top_backgroung"
+                android:drawableLeft="@drawable/lyy_user_phone"
+                android:hint="请输入可拨打手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/epp_yanzheng"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/yanzheng_bg"
+                android:text="获取验证码" />
+
+            <EditText
+                android:id="@+id/eepp_yanzheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/epp_phone"
+                android:layout_marginTop="-1dp"
+                android:background="@drawable/edit_bottom_backgroung"
+                android:drawableLeft="@drawable/lyy_msg_get"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/add_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/two_radius"
+            android:enabled="true"
+            android:gravity="top"
+            android:hint="请介绍您的代养经验"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="3"
+            android:scrollbars="vertical" >
+        </EditText>
+
+        <Button
+            android:id="@+id/epp_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_login_bg"
+            android:gravity="center"
+            android:text="提交代养信息"
+            android:onClick="submits"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

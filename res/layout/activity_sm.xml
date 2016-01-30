@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SMActivity" >
+
+    <RelativeLayout
+        android:id="@+id/sub_top"
+        style="@style/mw"
+        android:background="@color/themeColor" >
+
+        <ImageView
+            android:id="@+id/sub_back"
+            style="@style/topbarsize"
+            android:src="@drawable/lyy_top_back" />
+
+        <TextView
+            android:id="@+id/sub_text"
+            style="@style/ww"
+            android:layout_centerInParent="true"
+            android:text="我的代养"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_top"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="代养类型：" />
+
+            <TextView
+                android:id="@+id/sub_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="截止时间：" />
+
+            <TextView
+                android:id="@+id/sub_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="代养状态" />
+
+            <ImageView
+                android:id="@+id/sub_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_toggle_button_cache_off" />
+        </RelativeLayout>
+        <LinearLayout 
+            android:id="@+id/show_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/sm_user_phones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入TA的用户名或者手机号"
+            android:background="@drawable/edit_top_backgroung"
+            />
+        <EditText
+            android:id="@+id/sm_plantname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入代养植物名称"
+            android:background="@drawable/edit_middle_backgroung"
+            />
+        <com.example.circleimageview.EditTextWithDate
+            android:id="@+id/user_limitedDate"
+            style="@style/mw"
+            android:background="@drawable/edit_bottom_backgroung"
+            android:hint="请点击右侧日历选择领取日期" />
+        <Button
+            android:id="@+id/sm_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_login_bg"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/pop_picture"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.73"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#EE4000"
+                android:text="名称"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pop_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="价格"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pop_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="on_gmtc"
+            android:paddingRight="10dp"
+            android:src="@drawable/mini_icon_clean" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" 
+        >
+
+        <TextView
+            android:id="@+id/hanpenfou"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="是否含盆"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D4D4D4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+
+            <!-- 含盆  盆：basin -->
+
+            <TextView
+                android:id="@+id/basin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/yuanjiao"
+                android:onClick="on_gmtc"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="含盆" />
+            <!-- 不含盆 -->
+
+            <TextView
+                android:id="@+id/nobasin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/yuanjiao"
+                android:onClick="on_gmtc"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="不含盆" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBEB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 购买数量 -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="购买数量" />
+
+            <TextView
+                android:id="@+id/pop_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zhijiao"
+                android:onClick="on_gmtc"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:text="一" />
+            <!-- 购买数量加减数 -->
+
+            <TextView
+                android:id="@+id/pop_num"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zhijiao"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/pop_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/zhijiao"
+                android:onClick="on_gmtc"
+                android:paddingBottom="10dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="10dp"
+                android:text="+" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EBEBEB" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#EE7600"
+        android:gravity="center"
+        android:onClick="on_gmtc"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="确定" />
+
+</LinearLayout>

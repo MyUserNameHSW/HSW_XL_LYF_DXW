@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/l1"
+        style="@style/top" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/fatie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="发帖"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="发表"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/newtheme"
+        style="@style/mw"
+        android:layout_below="@+id/l1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="标题（必填）"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/ne"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/newtheme"
+        android:background="#44909090" />
+    <!-- 设置EditText下划线消失android:background=@null -->
+
+    <EditText
+        android:id="@+id/newarticl"
+        style="@style/mw"
+        android:layout_below="@+id/ne"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="top"
+        android:height="200dp"
+        android:hint="正文..."
+        android:textSize="16sp" >
+    </EditText>
+
+    <GridView
+        android:id="@+id/newgridView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/newarticl"
+        android:layout_margin="10dp"
+        android:background="#10000000"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.lyy.project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#8B668B" >
+
+        <ImageView
+            android:id="@+id/finfo_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/detail_back" />
+
+        <com.example.circleimageview.CircleImageView
+            android:id="@+id/fone"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ce_head"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <TextView
+            android:id="@+id/finfo_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fone"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="username"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re1"
+        android:layout_marginTop="10dp"
+        android:text="TA发表过的帖子" />
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/fforums"
+        android:layout_below="@id/texts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</RelativeLayout>

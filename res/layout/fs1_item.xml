@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/mw"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/ww"
+            android:layout_marginLeft="16dp"
+            android:text="订单号"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/ordernumber"
+            style="@style/ww"
+            android:layout_marginLeft="10dp"
+            android:text="订单号"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fs1_r1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" >
+
+        <ImageView
+            android:id="@+id/fs1_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/fs1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fs1_img"
+            android:text="物品名" />
+
+        <TextView
+            android:id="@+id/fs1_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/fs1_img"
+            android:text="单价" />
+
+        <TextView
+            android:id="@+id/fs1_buy_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/fs1_price"
+            android:text="数量" />
+
+        <TextView
+            android:id="@+id/fs1_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="总价" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/fs1_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/small_btn1"
+            android:textColor="@color/themeColor"
+            android:textSize="12sp"
+            android:text="立即付款" />
+
+        <Button
+            android:id="@+id/fs1_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/fs1_pay"
+            android:background="@drawable/small_btn2"
+            android:textColor="@color/black"
+            android:textSize="12sp" 
+            android:text="删除订单"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff" />
+
+</LinearLayout>

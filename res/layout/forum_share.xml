@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        style="@style/top" >
+
+        <TextView
+            android:id="@+id/zfcancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="转发"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/zfsend"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="发送"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mw"
+        android:layout_below="@+id/zfshare"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/newpoint"
+            style="@style/mw"
+            android:layout_marginTop="10dp"
+            android:hint="说点什么吧。。。。"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/zftheme"
+            style="@style/mw"
+            android:singleLine="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/zfarticl"
+            style="@style/mw"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:singleLine="false"
+            android:textSize="16sp" />
+
+        <GridView
+            android:id="@+id/sharegridView"
+            style="@style/mw"
+            android:layout_below="@+id/newtheme"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>
